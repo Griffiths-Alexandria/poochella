@@ -1,0 +1,75 @@
+* {
+    font-family: 'Poiret One', cursive;
+}
+
+body {
+    position: relative;
+    height:100%;
+    background-color: gainsboro; 
+
+}
+
+.navbar {
+    padding: 20px 0;
+    -webkit-transition: background .25s ease-in-out,padding .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out,padding .25s ease-in-out;
+    transition: background .25s ease-in-out,padding .25s ease-in-out;
+}
+
+#navsections {
+    float: right;
+}
+
+.top-nav-collapse {
+    padding: 0;
+}
+
+#Miriam {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+
+#welcome {
+    padding-top: 100px; 
+    height: 650px; 
+    text-align: center;
+    background-image: url('images/placeholder1.jpeg'); 
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+
+#welcome h1 {
+    padding-top: 100px;
+    font-size: 80px;
+    color: teal; 
+    font-family: 'Great Vibes', cursive;
+}
+
+#section1{
+    padding-top: 40px; 
+    height: 300px; 
+}
+
+#section2 {
+    padding-top: 40px; 
+    height: 300px;
+    background-color: palevioletred; 
+}
+
+#section3 {
+    padding-top: 40px; 
+    height: 300px;
+}
+
+#section4 {
+    padding-top: 40px; 
+    height: 300px;
+}
+
+footer {
+    height: 400px;
+    background-color: cadetblue; 
+}
+
+
