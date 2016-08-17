@@ -26,10 +26,6 @@ app.config(function ($routeProvider) {
                 templateUrl: 'pages/contact.html',
                 controller: 'mainController'
             })
-            .when('/events', {
-                templateUrl: 'http://www.events.miriamspoochella.html',
-                controller: 'mainController'
-            })
             .when('/home', {
                 templateUrl: 'pages/home.html',
                 controller: 'mainController'
