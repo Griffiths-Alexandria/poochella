@@ -45,6 +45,41 @@ ul li {
     float: right;
 }
 
+#homedog1 {
+    width: 100%;
+    display: inline-block;
+    border: black solid 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+#homedog2 {
+    width: 48%;
+    display: inline-block; 
+    margin: auto; 
+    margin-top: 30px; 
+    border: black solid 10px;
+    border-radius: 20px;
+}
+
+#homedog3 {
+    width: 100%;
+    display: inline-block;
+    border: black solid 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.paw1 {
+    width: 15%;
+    margin-right: 30px; 
+}
+
+.paw2 {
+    width: 15%; 
+    margin-left: 30px; 
+}
+
 .services {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;  
@@ -84,7 +119,6 @@ ul li {
     display: block;
     margin: auto;
     clear:both;
-    margin-bottom: -170px;
 }
 
 #missionstatement {
@@ -98,6 +132,7 @@ ul li {
 
 #welcome {
     height: 250px;
+    margin-bottom: 20px;
 }
 
 #about {
@@ -129,9 +164,24 @@ ul li {
     height: 100%;
 }
 
+.staffphoto {
+    width: 200px;
+    border-radius: 20px;
+    border: black solid 5px;
+    margin-bottom: 20px;
+}
+
+.stafftext {
+    color: #28a38f; 
+}
+
+.kisspooch {
+    text-align: center; 
+}
+
 footer {
     margin-top: 20px;
-    height: 100px;
+    height: 100%;
     background-color: #e3245e; 
     position: absolute;
     bottom: 0; 
@@ -150,16 +200,19 @@ iframe {
     display: inherit; 
 }
 
-a {
+footer a {
     text-decoration: none; 
+    padding-top: 25px;
     color: white; 
+    font-size: 12px;
+    text-align: center; 
 }
 
 .abouts {
     margin-top: 0px;
     display: inline-block;
     position: relative;
-    margin-left: 100px;
+    margin-left: 90px;
     margin-right: auto;   
 }
 
