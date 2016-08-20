@@ -1,6 +1,6 @@
 * {
     font-family: 'Quicksand', cursive; 
-    
+
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -46,12 +46,13 @@ ul li {
 }
 
 .services {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      background-color: white;  
-      margin: 10px;
-      height: 300px;
-      padding-top: 20px;
-      border-radius: 20px
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;  
+    margin: 10px;
+    height: 300px;
+    padding-top: 20px;
+    border-radius: 20px;
+
 }
 
 .centersections {
@@ -69,16 +70,16 @@ ul li {
 }
 
 #logo {
-    padding-top: 100px;
+    padding-top: 70px;
     display: block;
     position: relative;
-    width: 30%;
+    width: 400px;
     margin: auto;
     text-align: center;
 }
 
 #logohome {
-    width: 60%;
+    width: 53%;
     padding-top: 100px;
     display: block;
     margin: auto;
@@ -155,7 +156,7 @@ a {
 }
 
 .abouts {
-     margin-top: 50px;
+    margin-top: 0px;
     display: inline-block;
     position: relative;
     margin-left: 100px;
@@ -163,9 +164,16 @@ a {
 }
 
 .aboutdiv {
-    
+
 }
 
+.servicephotos {
+    width: 100%; 
+}
+
+.servicespacing {
+    margin-left: 40px; 
+}
 /************animations***********/
 
 
@@ -190,18 +198,110 @@ a {
 }
 
 .fade-in.one {
--webkit-animation-delay: 0.7s;
--moz-animation-delay: 0.7s;
-animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
 
 .fade-in.two {
--webkit-animation-delay: 1.2s;
--moz-animation-delay:1.2s;
-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    animation-delay: 1.2s;
+}
+
+.serviceimage {
+    height: 100%; 
+    border-radius: 20px;
+    text-align: center;
+
+
 }
 
 .box {
+    cursor: pointer;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-left: 15px;
+    display: inline-block;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.box img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+
+}
+
+.box .overbox {
+    background-color: #e3245e;
+    position: absolute;
+    top: 0;
+    left: 5;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 90%;
+    height: 250px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.box:hover .overbox { opacity: 1; }
+
+.box .overtext {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+}
+
+.box .title {
+    font-size: 2em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    word-wrap: break-word; 
+}
+
+.box:hover .title,
+.box:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.box .tagline {
+    font-size: 1em;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.box:hover .tagline,
+.box:focus .tagline {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+}
+
+.boxtwo {
     cursor: pointer;
     height: 300px;
     position: relative;
@@ -209,74 +309,78 @@ animation-delay: 1.2s;
     width: 400px;
     margin-left: 50px;
     margin-right: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
+    border-radius: 20px;
 }
 
-.box img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+.boxtwo img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    height: 300px;
+    width: 400px; 
 }
 
-.box .overbox {
-  background-color: #28a38f;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-  z-index: 100;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  opacity: 0;
-  width: 100%;
-  height: 240px;
-  padding: 130px 20px;
+.boxtwo .overbox {
+    background-color: #28a38f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 100%;
+    height: 240px;
+    padding: 130px 20px;
+    border-radius: 20px; 
 }
 
-.box:hover .overbox { opacity: 1; }
+.boxtwo:hover .overbox { opacity: 1; }
 
-.box .overtext {
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  transform: translateY(40px);
-  -webkit-transform: translateY(40px);
+.boxtwo .overtext {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
 }
 
-.box .title {
-  font-size: 2.5em;
-  text-transform: uppercase;
-  opacity: 0;
-  transition-delay: 0.1s;
-  transition-duration: 0.2s;
+.boxtwo .title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
 }
 
-.box:hover .title,
-.box:focus .title {
-  opacity: 1;
-  transform: translateY(0px);
-  -webkit-transform: translateY(0px);
+.boxtwo:hover .title,
+.boxtwo:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
 }
 
-.box .tagline {
-  font-size: 0.8em;
-  opacity: 0;
-  transition-delay: 0.2s;
-  transition-duration: 0.2s;
+.boxtwo .tagline {
+    font-size: 0.8em;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
 }
 
-.box:hover .tagline,
-.box:focus .tagline {
-  opacity: 1;
-  transform: translateX(0px);
-  -webkit-transform: translateX(0px);
+.boxtwo:hover .tagline,
+.boxtwo:focus .tagline {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
 }
